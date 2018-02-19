@@ -21,7 +21,7 @@ sleep 2s
 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 cd /root
 apt-get update
-apt-get -y install build-essential wget python-dev libffi-dev openssl python-pip libssl-dev zip unzip
+apt-get -y install build-essential wget python-dev libffi-dev openssl python-pip libssl-dev zip unzip git
 wget https://github.com/jedisct1/libsodium/releases/download/1.0.10/libsodium-1.0.10.tar.gz
 tar xf libsodium-1.0.10.tar.gz && cd libsodium-1.0.10
 ./configure && make -j2 && make install
