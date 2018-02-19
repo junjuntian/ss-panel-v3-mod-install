@@ -27,10 +27,12 @@ tar xf libsodium-1.0.10.tar.gz && cd libsodium-1.0.10
 ./configure && make -j2 && make install
 ldconfig
 cd .. && rm -f libsodium-1.0.10.tar.gz && rm -rf libsodium-1.0.10
-wget https://raw.githubusercontent.com/chiakge/ss-panel-v3-mod-install/master/shadowsocks.zip
-unzip shadowsocks && rm -f shadowsocks.zip && cd shadowsocks
+git clone -b manyuser https://github.com/chiakge/shadowsocks.git
+cd shadowsocks
 pip install --upgrade setuptools
 pip install -r requirements.txt
+cp apiconfig.py userapiconfig.py
+cp config.json user-config.json
 chmod +x *.sh
 echo "# Config
 NODE_ID = ${nodeid}
