@@ -92,6 +92,9 @@ autostart=true
 user=root" > /etc/supervisor/conf.d/ssr.conf
 echo "ulimit -n 1024000" >> /etc/default/supervisor
 /etc/init.d/supervisor restart
+echo -e "8.8.8.8 53
+8.8.4.4 53" > /root/shadowsocks/dns.conf
+cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 supervisorctl restart ssr
 
 
