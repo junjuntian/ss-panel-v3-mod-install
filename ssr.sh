@@ -80,10 +80,7 @@ MANAGE_PASS = 'ss233333333'
 # if you want manage in other server you should set this value to global ip
 MANAGE_BIND_IP = '127.0.0.1'
 # make sure this port is idle
-MANAGE_PORT = 23333
-
-# Safety
-IP_MD5_SALT = 'randomforsafety'" > /root/shadowsocks/userapiconfig.py
+MANAGE_PORT = 23333" > /root/shadowsocks/userapiconfig.py
 apt-get install supervisor -y
 echo "[program:ssr]
 command=python /root/shadowsocks/server.py 
