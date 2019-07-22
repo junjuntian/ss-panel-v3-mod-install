@@ -40,7 +40,7 @@ NODE_ID = ${nodeid}
 
 # hour,set 0 to disable
 SPEEDTEST = ${speedtest}
-CLOUDSAFE = 1
+CLOUDSAFE = 0
 ANTISSATTACK = 0
 AUTOEXEC = 0
 
